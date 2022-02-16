@@ -2,6 +2,7 @@ import React, { useContext }  from 'react'
 import { Button, Container, Segment, Dropdown } from 'semantic-ui-react'
 import { StoreContext } from './index';
 import { useObserver } from 'mobx-react';
+import MessageError from './MessageError';
 
 const MainView = () => {
     const store = useContext(StoreContext)

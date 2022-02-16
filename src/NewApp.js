@@ -17,6 +17,7 @@ import Login from './Login';
 import MainView from './MainView';
 import { StoreContext } from './index';
 import { useObserver } from 'mobx-react';
+import MessageError from './MessageError';
 
 const FixedMenuLayout = () => {
   const store = useContext(StoreContext)
@@ -91,6 +92,8 @@ const FixedMenuLayout = () => {
         }
       </Container>
     </Menu>
+
+    
 
     {((store.showLogin || store.showSingup) && !store.isLoading) &&
       <Login />

@@ -40,6 +40,10 @@ class Store {
 
     lastUpdate = ""
 
+    hasError = false
+    
+    errorMsg = ''
+
     comments = ["Wow", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome", "awesome"]
 
     constructor() {
@@ -140,6 +144,18 @@ class Store {
 
     get commentsCount(){
         return this.comments.length;
+    }
+
+    setToken(_token){
+        this.token = _token;
+    }
+
+    showError(isError){
+        this.hasError = isError;
+    }
+
+    setErrorMsg(text){
+        this.errorMsg = text
     }
 
 }
