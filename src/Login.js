@@ -31,7 +31,7 @@ const LoginForm = () => {
 
     const singUp = (_user, _pass, _pass2) => {
       (async () => {
-        const rawResponse = await fetch('http://185.139.68.97/route/user/', {
+        const rawResponse = await fetch('https://185.139.68.97/route/user/', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -81,7 +81,7 @@ const LoginForm = () => {
       }
       formBody = formBody.join("&");
       
-      fetch('http://185.139.68.97/route/login/', {
+      fetch('https://185.139.68.97/route/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
