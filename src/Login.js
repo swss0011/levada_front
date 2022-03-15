@@ -32,6 +32,7 @@ const LoginForm = () => {
     const singUp = (_user, _pass, _pass2) => {
       (async () => {
         const rawResponse = await fetch('https://levada-server.onrender.com/user/', {
+
           method: 'POST',
           headers: {
             'Accept': 'application/json',
