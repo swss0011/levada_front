@@ -71,7 +71,6 @@ const LoginForm = () => {
       var details = {
         'username': _user,
         'password': _pass,
-        'grant_type': 'password'
       };
       
       var formBody = [];
